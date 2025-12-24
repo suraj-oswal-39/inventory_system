@@ -1,0 +1,88 @@
+<div class="pageBlock">
+    <nav class="TitlePage">
+        <h3>Purchase Order</h3>
+    </nav>
+    <form id="purchaseOrderForm" class="fromBlock">
+
+        <div class="prow">
+            <div class="colu1">
+                <div class="prow1">
+                    <div class="inputBox">
+                        <label for="purchase_order_id">Purchase Order ID</label>
+                        <input type="text" class="inputField" id="purchase_order_id" name="purchase_order_id" max="50"
+                            placeholder="Enter purchase order id" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="contact">Store Owner Contact Number</label>
+                        <input type="number" class="inputField" id="contact" name="contact" min="10" max="10"
+                            placeholder="Enter store owner contact number" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="expectedDeliveryDate">Expected Delivery Date</label>
+                        <input type="date" class="inputField" id="expectedDeliveryDate" name="expectedDeliveryDate" placeholder="Enter expected delivery date" required>
+                    </div>
+                </div>
+                <div class="prow2 orderRows">
+                    <div class="orderRow">
+                        <div class="inputBox">
+                            <label for="supplier">Supplier Name:</label>
+                            <select class="inputField supplierSelect" required>
+                                <option value="">Select Supplier</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="item">Item Name:</label>
+                            <select class="inputField itemSelect" required>
+                                <option value="">Select Item</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" class="inputField" min="1" placeholder="Enter item quantity" required>
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+                <div class="prow3">
+                    <div class="moreItemRows2">
+                        <div class="plusSign2">
+                            <div class="plusIconLine1a"></div>
+                            <div class="plusIconLine2a"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colu2">
+                <div class="TEXTAREA2">
+                    <label for="address">Delivery Address</label>
+                    <textarea class="inputField2" id="address" name="address"
+                        placeholder="Enter store address for delivery" required></textarea>
+
+                    <label for="remarks">Remarks</label>
+                    <textarea class="inputField2" id="remarks" name="remarks"
+                        placeholder="Enter any additional note"></textarea>
+                </div>
+                <footer class="formButtons">
+                    <div class="button2" id="bu13">Order Now</div>
+                </footer>
+            </div>
+        </div>
+
+        <div class="orderWindow">
+            <p class="orderWdMessage">
+                Are you sure you want to order this items?
+            </p>
+            <div class="orderWdButton">
+                <button class="button" id="bu17">No</button>
+                <button type="reset" class="button" id="bu18">Yes</button>
+            </div>
+        </div>
+
+        <div class="orderDoneMessage">
+            <p>Items is ordered</p>
+        </div>
+
+    </form>
+</div>

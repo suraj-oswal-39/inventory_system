@@ -1,0 +1,44 @@
+!-- copy and paste this queries --!
+
+CREATE TABLE items (
+sku VARCHAR(50) PRIMARY KEY NOT NULL,
+item_name VARCHAR(100) NOT NULL,
+quantity INT,
+unit VARCHAR(20),
+category VARCHAR(50),
+purchase_price DECIMAL(10, 2),
+selling_price DECIMAL(10, 2),
+supplier_name VARCHAR(100),
+date_added DATE,
+item_photo LONGBLOB,
+description TEXT,
+);
+
+CREATE TABLE customers (
+sale_id INT AUTO_INCREMENT PRIMARY KEY,
+customer_id VARCHAR(50),
+customer_name VARCHAR(100),
+customer_phone VARCHAR(10),
+sales_date DATE,
+payment_method VARCHAR(20),
+total_amount DECIMAL(10,2)
+);
+
+CREATE TABLE sold_items (
+sold_items_id INT AUTO_INCREMENT PRIMARY KEY,
+sale_id INT,
+item_sku VARCHAR(50),
+quantity INT,
+price DECIMAL(10,2),
+discount DECIMAL(10,2),
+discount_mode VARCHAR(10),
+amount DECIMAL(10,2),
+
+CONSTRAINT fk_sale
+    FOREIGN KEY (sale_id) REFERENCES customers(sale_id)
+    ON DELETE CASCADE,
+
+CONSTRAINT fk_item
+    FOREIGN KEY (item_sku) REFERENCES items(sku)
+    ON UPDATE CASCADE
+);

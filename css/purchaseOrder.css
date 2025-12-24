@@ -1,0 +1,171 @@
+/* .col1, .col2, .col3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 50%;
+    padding-left: 32px;
+    color: var(--text-color-1);
+} */
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 40px;
+    background-color: transparent;
+    border: var(--border-color-1) 2px solid;
+    border-radius: 16px;
+    color: var(--text-color-1);
+}
+
+.button2:hover {
+    background-color: var(--bg-color-5);
+    color: var(--text-color-3);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.TEXTAREA2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 366px;
+}
+
+.inputField2 {
+    background-color: transparent;
+    width: 75%;
+    border: 2px solid var(--border-color-1);
+    border-radius: 16px;
+    padding: 6px 12px;
+    margin-left: 16px;
+    color: var(--text-color-1);
+    height: 141px
+}
+
+.inputField2:hover {
+    background-color: var(--bg-color-3);
+}
+
+.inputField2:focus-visible {
+    outline: none;
+    background-color: var(--bg-color-3);
+}
+
+.orderDoneMessage {
+    position: absolute;
+    top: -10%;
+    left: 42.53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-2);
+    width: 180px;
+    height: 45px;
+    border: var(--border-color-1) 2px solid;
+    border-radius: 16px;
+    transition: linear 0.3s;
+    filter: drop-shadow(0px 0px 4px var(--filter-2));
+    color: var(--text-color-1);
+}
+
+.prow {
+    display: flex;
+    width: 92vw;
+    height: 81vh;
+    color: var(--text-color-1);
+}
+
+.colu1 {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    row-gap: 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.prow1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.prow2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.orderRow {
+    position: relative;
+    display: flex;
+    width: 96%;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.colu2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 35%;
+}
+
+.moreItemRows2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    border: 2px solid var(--border-color-1);
+    border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.moreItemRows2:hover {
+    background-color: var(--bg-color-3);
+}
+
+.plusSign2 {
+    position: relative;
+    width: 28px;
+    height: 28px;
+}
+
+.plusIconLine1a {
+    position: absolute;
+    top: 50%;              
+    left: 50%;         
+    width: 18px;       
+    height: 4px;
+    background-color: var(--border-color-1);
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.plusIconLine2a {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 4px;            
+    height: 18px;         
+    background-color: var(--border-color-1);
+    transform: translate(-50%, -50%); 
+    border-radius: 4px;
+}
+
+.mSI2 {
+    display: flex;
+    position: absolute;
+    right: -24px;
+    cursor: pointer;
+}

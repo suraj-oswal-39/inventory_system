@@ -1,0 +1,214 @@
+.billingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 92vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.column3,
+.column4,
+.column5 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.itemDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.moreItemRows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    border: 2px solid var(--border-color-1);
+    border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.moreItemRows:hover {
+    background-color: var(--bg-color-3);
+}
+
+.plusSign {
+    position: relative;
+    width: 28px;
+    height: 28px;
+}
+
+.plusIconLine1 {
+    position: absolute;
+    top: 50%;              
+    left: 50%;         
+    width: 18px;       
+    height: 4px;
+    background-color: var(--border-color-1);
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+
+.plusIconLine2 {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 4px;            
+    height: 18px;         
+    background-color: var(--border-color-1);
+    transform: translate(-50%, -50%); 
+    border-radius: 4px;
+}
+
+.r1 {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.mSI {
+    display: flex;
+    position: absolute;
+    right: 32px;
+    cursor: pointer;
+}
+
+.msi1 {
+    stroke: var(--border-color-1);
+}
+
+.totalItemAmount {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 32px;
+    width: 90vw;
+    color: var(--text-color-1);
+}
+
+.totalAmountBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 64px;
+    height: 72px;
+}
+
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.c2 {
+    position: relative;
+    left: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.c3 {
+    position: relative;
+    left: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.c4 {
+    position: relative;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.c5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    width: 50%;
+}
+
+.iF1 {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.iF2 {
+    width: 80px;
+    margin-left: 4px;
+}
+
+.iF3 {
+    width: 90%;
+    margin-left: 0px;
+}
+
+.discountBlock {
+    display: flex;
+}
+
+hr {
+    width: 90vw;
+    border: 1.3px solid var(--border-color-1);
+    margin: 16px 0px 16px 0px;
+}
+
+.TA2 {
+    border-radius: 50px;
+    border: 2px solid var(--border-color-1);
+    padding: 8px 16px 8px 16px;
+}
+
+.TA2::before {
+    content: "Rs. ";
+}
+
+.soldDoneMessage {
+    position: absolute;
+    top: -20%;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-color-2);
+    width: 360px;
+    height: 90px;
+    border: var(--border-color-1) 2px solid;
+    border-radius: 16px;
+    transition: linear 0.3s;
+    filter: drop-shadow(0px 0px 4px var(--filter-2));
+    color: var(--text-color-1);
+}
+
+.TitlePage {
+    display: flex;
+    width: 90vw;
+    min-height: 32px;
+    border-bottom: 2px solid var(--border-color-1);
+    color: var(--text-color-1);
+}
+
+.billingName {
+    margin-right: 16px;
+    border-right: 2px solid var(--border-color-1);
+    height: 24px;
+    font-size: 1.17em;
+    padding-right: 16px;
+}

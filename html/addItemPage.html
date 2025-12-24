@@ -1,0 +1,200 @@
+<div class="pageBlock">
+    <nav class="TitlePage">
+        <h3>Add New Item</h3>
+    </nav>
+
+    <form id="addItemForm" class="fromBlock" action="http://localhost:3000/add-item" method="POST"
+        enctype="multipart/form-data">
+
+        <div class="row">
+
+            <div class="column1">
+
+                <label for="itemName">Item Name</label>
+                <input type="text" max="100" placeholder="Enter a item name" id="itemName" name="item_name"
+                    class="inputField" required>
+
+                <label for="sku">SKU</label>
+                <input type="text" max="50" placeholder="Enter a item stock keeping unit" id="sku" name="sku"
+                    class="inputField" required>
+
+                <div class="QuantityAndUnit">
+
+                    <div class="QUANTITY">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" min="0" placeholder="Enter a item quantity" id="quantity" name="quantity"
+                            class="inputField" required>
+                    </div>
+
+                    <div class="UNIT">
+                        <label for="unit">Unit</label>
+                        <select id="unit" name="unit" class="inputField" required>
+                            <option value="">Select a unit</option>
+                            <option value="btl">Bottle (btl)</option>
+                            <option value="box">Box</option>
+                            <option value="bdl">Bundle (bdl)</option>
+                            <option value="doz">Dozen (doz)</option>
+                            <option value="g">Gram (g)</option>
+                            <option value="jar">Jar</option>
+                            <option value="kg">Kilogram (kg)</option>
+                            <option value="L">Liter (L)</option>
+                            <option value="mg">Milligram (mg)</option>
+                            <option value="ml">Milliliter (ml)</option>
+                            <option value="pkt">Packet (pkt)</option>
+                            <option value="pair">Pair</option>
+                            <option value="pcs">Pieces (pcs)</option>
+                            <option value="qtl">Quintal (qtl)</option>
+                            <option value="roll">Roll</option>
+                            <option value="sachet">Sachet</option>
+                            <option value="set">Set</option>
+                            <option value="tin">Tin / Can</option>
+                            <option value="unit">Unit</option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <!--category for general store: -->
+                <label for="category">Category</label>
+                <select id="category" name="category" class="inputField" required>
+                    <option value="">Select a category</option>
+                    <option value="bakery">Bakery</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="cleaning">Cleaning Supplies</option>
+                    <option value="dairy">Dairy & Eggs</option>
+                    <option value="frozen">Frozen Foods</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="grocery">Grocery & Food Items</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="household">Household Essentials</option>
+                    <option value="miscellaneous">Miscellaneous</option>
+                    <option value="personal_care">Personal Care</option>
+                    <option value="snacks">Snacks</option>
+                    <option value="stationery">Stationery</option>
+                    <option value="toys">Toys & Kids Items</option>
+                    <option value="vegetables">Vegetables</option>
+
+                </select>
+
+            </div>
+
+            <div class="column2">
+
+                <label for="sellingPrice">Selling Price</label>
+                <div>&#8360;.<input type="number" min="0" max="10.99" placeholder="Enter a item selling price" step="0.01"
+                        id="sellingPrice" name="selling_price" class="inputField" required></div>
+
+                <label for="purchasePrice">Purchase Price</label>
+                <div>&#8360;.<input type="number" min="0" max="10.99" placeholder="Enter a item purchase price" step="0.01"
+                        id="purchasePrice" name="purchase_price" class="inputField" required></div>
+
+                <label for="supplierName">Supplier Name</label>
+                <input type="text" max="100" placeholder="Enter a item supplier name" id="supplierName"
+                    name="supplier_name" class="inputField" required>
+
+                <label for="dateAdded">Date Added</label>
+                <input type="date" placeholder="Enter a item date added" id="dateAdded" name="date_added"
+                    class="inputField" required>
+
+            </div>
+
+            <div class="column3">
+
+                <div class="upload-container">
+                    <label for="imageUpload" class="upload-box" id="dropArea">
+                        <div class="upload-message">
+                            <span id="uploadIcon"><svg width="125px" height="125px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="upIcon"
+                                        d="M13 4H8.8C7.11984 4 6.27976 4 5.63803 4.32698C5.07354 4.6146 4.6146 5.07354 4.32698 5.63803C4 6.27976 4 7.11984 4 8.8V15.2C4 16.8802 4 17.7202 4.32698 18.362C4.6146 18.9265 5.07354 19.3854 5.63803 19.673C6.27976 20 7.11984 20 8.8 20H15.2C16.8802 20 17.7202 20 18.362 19.673C18.9265 19.3854 19.3854 18.9265 19.673 18.362C20 17.7202 20 16.8802 20 15.2V11"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="upIcon"
+                                        d="M4 16L8.29289 11.7071C8.68342 11.3166 9.31658 11.3166 9.70711 11.7071L13 15M13 15L15.7929 12.2071C16.1834 11.8166 16.8166 11.8166 17.2071 12.2071L20 15M13 15L15.25 17.25"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="upIcon" d="M18 8V3M18 3L16 5M18 3L20 5" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></span>
+                            <span id="uploadText">Drop The Image</span>
+                        </div>
+                        <input type="file" id="imageUpload" name="item_photo" accept="image/*" hidden required>
+                        <img id="preview" class="preview-img">
+                    </label>
+                </div>
+
+                <div class="TEXTAREA">
+                    <label for="description" class="TA">Description</label>
+                    <textarea placeholder="Enter a item description" id="description" name="description" rows="3"
+                        class="inputField" required></textarea>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="formButtons">
+            <div class="button" id="bu1">Reset</div>
+            <div class="button" id="bu2">Save</div>
+            <div class="button" id="bu7">Update</div>
+            <div class="button" id="bu10">Delete</div>
+        </footer>
+
+        <div class="resetWindow">
+            <p class="resetWdMessage">
+                Are you sure you want to reset all details?
+            </p>
+            <div class="restWdButton">
+                <div class="button" id="bu3">No</div>
+                <button type="reset" class="button" id="bu4">Yes</button>
+            </div>
+        </div>
+
+        <div class="resetDoneMessage">Reset all details</div>
+
+        <div class="saveWindow">
+            <p class="saveWdMessage">
+                Are you sure you want to save all details?
+            </p>
+            <div class="saveWdButton">
+                <div class="button" id="bu5">No</div>
+                <button type="button" class="button" id="bu6">Yes</button>
+            </div>
+        </div>
+
+        <div class="savedDoneMessage">All details saved successfully</div>
+
+        <div class="updateWindow">
+            <div class="updateWdMessage">
+                <p>
+                    Are you sure you want to update item details?<br>
+                    (This will replace the existing details)
+                </p>
+            </div>
+            <div class="updateWdButton">
+                <div class="button" id="bu8">No</div>
+                <button type="button" class="button" id="bu9">Yes</button>
+            </div>
+        </div>
+
+        <div class="updatedDoneMessage">All details update successfully</div>
+
+        <div class="deleteWindow">
+            <div class="deleteWdMessage">
+                <p>
+                    Are you sure you want to remove item details?<br>
+                    (This will delete the existing item)
+                </p>
+            </div>
+            <div class="deleteWdButton">
+                <div class="button" id="bu11">No</div>
+                <button type="button" class="button" id="bu12">Yes</button>
+            </div>
+        </div>
+
+        <div class="deletedDoneMessage">Item delete successfully</div>
+
+        <div class="TooLargerImage">
+            <p>Image is too large!<br>only allowed 4MB image</p>
+        </div>
+    </form>
+</div>

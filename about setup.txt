@@ -1,0 +1,37 @@
+how to setup inventory?
+-> 
+1. download this project zip this to your local computer and extract zip.
+2. download and setup node.js (environment variable/path).
+3. download and setup MySQL 
+4. download and open "vs-code"
+5. install "live server"
+6. open project folder in vs-code, go to "html" folder in vs-code explorer and click on "index.html"
+7. click on "Go Live"
+8. open server.js file in vs-code explorer
+9. at line (origin: "http://127.0.0.1:3691"), replace port number "3691" with your live-server port number that shows at bottom bar in a place where "Go live" you click
+10. at line 
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "ABDC1234",
+    database: "inventory_db"
+});
+replace "ABDC1234" with your database password
+11. create database named "inventory_db" in mySQL
+12. create require tables that shows in require-table.txt file on vs-code explorer
+13. click on "view" at top bar of vs-code and click on terminal
+14. start node.js server by writing "node server.js" in terminal and press enter
+15. i recommend for beginner, first go to setting at left-bottom side then click on help and read useful information than start working with inventory.
+
+how to start node.js server?
+-> write "node server.js" in vs-code command line.
+
+how to reset auto-increment and delete data from sold_items and customers table if foreign key is there?
+->
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE sold_items;
+TRUNCATE TABLE customers;
+SET FOREIGN_KEY_CHECKS = 1;
+
+how to delete data from items table using sql query?
+-> truncate table items;

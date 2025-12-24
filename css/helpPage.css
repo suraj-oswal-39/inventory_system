@@ -1,0 +1,145 @@
+*  {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url('../font/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-family: DMSans, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0000ff;
+    color: #ffffff;
+    height: 56px;
+    padding: 0px 0px 0px 32px;
+}
+
+.p0 {
+    padding: 8px 0px 8px 32px;
+}
+
+h2 {
+    padding: 0px 0px 8px 32px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 96vw;
+    padding-left: 32px;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.li > input[type="checkbox"] {
+    appearance: none;
+    background-image: url('../svg/right_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+}
+
+.li > input[type="checkbox"]:checked {
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(90deg);
+}
+
+.info {
+    font-size: 14px;
+    padding: 0px 0px 0px 64px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s linear, opacity 0.3s ease;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 32px;
+}
+
+.HowTo {
+    display: flex;
+    flex-direction: column;   
+}
+
+.aiImg {
+    width: 80%;
+    height: 80%;
+}
+
+.bottomLayout {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #eeeeee;
+    color: #ffffff;
+    height: 48px;
+    padding: 0px 32px 16px 0px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 32px;
+    background-color: transparent;
+    border: #0000ff 2px solid;
+    border-radius: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+}
+
+a:hover, a:hover .button {
+    background-color: #0000ff;
+    color: #ffffff;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.comparisonImg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.beforeImg, .afterImg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.beforeImg > .aiImg, .afterImg > .aiImg {
+    width: 90%;
+}

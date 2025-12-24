@@ -1,0 +1,22 @@
+<svg width="34px" height="34px" viewBox="0 0 24 24" id="bill-custom-symbol-small" data-name="Flat Line"
+    xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+    <path id="secondary"
+        d="M11,10a8,8,0,0,1,4.13-7H5A1,1,0,0,0,4,4V21l2.34-1,2.33,1L11,20l2.33,1,2.33-1L18,21V17.93A8,8,0,0,1,11,10Z"
+        style="fill: rgb(44, 169, 188); stroke-width: 2;">
+    </path>
+    <g transform="translate(-2.5, 1.4) scale(1.2)">
+        <path
+            d="M17.25 10.75L15.3109 9.2594V9.2594C15.2818 9.2294 15.3045 9.1729 15.3467 9.1717C18.4996 9.0708 18.4632 4.5 15.25 4.5H19"
+            style="fill: none; stroke: #000000; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;">
+        </path>
+        <path d="M15.25 6.75H19"
+            style="fill: none; stroke: #000000; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;">
+        </path>
+    </g>
+    <path id="primary-2" data-name="primary" d="M12,15H8M12,11H8"
+        style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+    </path>
+    <path id="primary-3" data-name="primary" d="M15,3H5A1,1,0,0,0,4,4V21l2.34-1,2.33,1L11,20l2.33,1,2.33-1L18,21V18"
+        style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+    </path>
+</svg>

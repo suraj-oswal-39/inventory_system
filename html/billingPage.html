@@ -1,0 +1,118 @@
+<div class="pageBlock">
+    <nav class="TitlePage">
+        <h3 class="billingName">Billing</h3>
+        <h3 class="todaySales">Today Sales: </h3>
+    </nav>
+    <form class="billingContainer" id="billingContainer" action="/sell">
+        <!--billing container-->
+        <div class="billBlock">
+            <!-- Customer details -->
+            <div class="row customerDetails">
+                <div class="column1">
+                    <label for="customerId">Customer ID</label>
+                    <input type="text" max="50" id="customerId" class="inputField" name="customerId" placeholder="Customer id" required>
+                    <label for="salesDate">Sales Date</label>
+                    <input type="date" id="salesDate" class="inputField" name="salesDate" placeholder="Sales Date" required>
+                </div>
+                <div class="column2">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" max="100" id="customerName" class="inputField" name="customerName"
+                        placeholder="Customer name" required>
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" class="inputField" name="paymentMethod" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="cash">Cash</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
+                <div class="column3">
+                    <label for="customerPhone">Customer Phone Number</label>
+                    <input type="number" max="10" id="customerPhone" class="inputField" name="customerPhone"
+                        placeholder="Customer phone number" required>
+                </div>
+            </div>
+            <hr>
+            <!-- Item details -->
+            <div class="itemDetailsContainer">
+                <div class="itemDetailsRows">
+                    <div class="row r1">
+                        <div class="c1">
+                            <label><b>Item Name</b></label>
+                        </div>
+                        <div class="c2">
+                            <label><b>Quantity</b></label>
+                        </div>
+                        <div class="c3">
+                            <label><b>Price</b></label>
+                        </div>
+                        <div class="c4">
+                            <label><b>Discount Mode</b></label>
+                        </div>
+                        <div class="c5">
+                            <label><b>Amount</b></label>
+                        </div>
+                    </div>
+                    <div class="row r1">
+                        <div class="c1">
+                            <select class="inputField iF3" name="itemName" required>
+                                <option value="">Select Item</option>
+                            </select>
+                        </div>
+                        <div class="c2">
+                            <input type="number" max="10" class="inputField iF1" name="itemQuantity" placeholder="Quantity" required>
+                        </div>
+                        <div class="c3">
+                            <input type="text" class="inputField iF1" name="itemPrice" placeholder="Price" readonly>
+                        </div>
+                        <div class="c4">
+                            <div class="discountBlock">
+                                <input class="inputField" name="discountAmount" placeholder="Discount">
+                                <select class="inputField iF2" name="discountMode">
+                                    <option value="">none</option>
+                                    <option value=" cash">Cash</option>
+                                    <option value="%">%</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="c5">
+                            <input type="text" class="inputField iF1" name="itemAmount" placeholder="Amount" readonly>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more item rows -->
+                <div class="moreItemRows">
+                    <div class="plusSign">
+                        <div class="plusIconLine1"></div>
+                        <div class="plusIconLine2"></div>
+                    </div>
+                </div>
+                <!-- Total amount -->
+                <div class="totalItemAmount">
+                    <div class="totalAmountBox">
+                        <p><b>Total Amount</b></p>
+                        <p class="TA2">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="formButtons">
+            <div class="button" id="bu14">Sold</div>
+        </div>
+
+        <div class="soldWindow">
+            <p class="soldWdMessage">
+                Are you sure you want to sold this items?
+            </p>
+            <div class="soldWdButton">
+                <button class="button" id="bu15">No</button>
+                <button type="reset" class="button bu16" id="soldButton">Yes</button>
+            </div>
+        </div>
+
+        <div class="soldDoneMessage">
+            <p>Items is sold<br>All details is saved to the database</p>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="../css/helpPage.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Help Center</h1>
+    </header>
+
+    <div class="bottomLayout">
+
+        <div>
+
+            <p class="p0">Welcome to the Help Center! Here you can find answers to common questions and get assistance
+                with using the Inventory system.</p>
+
+            <h2><u>Frequently Asked Questions (FAQs)</u></h2>
+
+            <div class="ul">
+
+                <!--Item details of input field. -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>Item details that you can write on input field.</b>
+                    </label>
+                    <div class="info">
+                        <p>
+                        <ol type="1">
+                            <li>
+                                <b>Item Name</b>
+                                <ul>
+                                    <li>This is the name of the product. Example: "Fortune Oil 1L" or "Red Notebook".
+                                    </li>
+                                    <li>It helps you and others easily identify the item.</li>
+                                </ul>
+                            </li>
+                            <li><b>SKU (Stock Keeping Unit)</b>
+                                <ul>
+                                    <li>Think of this as the unique ID code for the item.</li>
+                                    <li>Each product should have its own SKU, so the system knows exactly which item it
+                                        is.
+                                    </li>
+                                    <li>Example: "OIL-1L-F1001" or "NOTE-A5-BLUE01".</li>
+                                </ul>
+                            </li>
+                            <li><b>Quantity</b>
+                                <ul>
+                                    <li>This tells how many pieces or units of the item are currently available.</li>
+                                    <li>Example: "50" bottles of oil or "200" notebooks.</li>
+                                </ul>
+                            </li>
+                            <li><b>Unit</b>
+                                <ul>
+                                    <li>This shows the measurement type of the item.</li>
+                                    <li>Example: pieces, liters, kilograms, boxes.</li>
+                                    <li>So if you write 10 and unit is kg, it means you have 10 kilograms of that item.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><b>Category</b>
+                                <ul>
+                                    <li>The group or type of item. Categories make searching easier.</li>
+                                    <li>Example: Food, Stationery, Electronics, Clothes.</li>
+                                </ul>
+                            </li>
+                            <li><b>Selling Price</b>
+                                <ul>
+                                    <li>The price at which you are selling the item to your customers.</li>
+                                    <li>Example: If you bought/purchase the notebook for ₹18.99 and you want to sell the notebook for ₹29.99, then selling price is 29.99.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><b>Purchase Price</b>
+                                <ul>
+                                    <li>The price at which you bought the item from the supplier.</li>
+                                    <li>Example: If you bought the notebook for ₹24.99, then purchase price is 24.99 .
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><b>Supplier Name</b>
+                                <ul>
+                                    <li>The name of the supplier/vendor from whom you bought the item.</li>
+                                    <li>Example: "ABC Stationery Supplier" or "XYZ Wholesale Market".</li>
+                                </ul>
+                            </li>
+                            <li><b>Date Added</b>
+                                <ul>
+                                    <li>The date when you added this item into your inventory system.</li>
+                                    <li>This helps track how old the stock is.</li>
+                                </ul>
+                            </li>
+                            <li><b>Upload Image</b>
+                                <ul>
+                                    <li>You can upload a photo of the item.</li>
+                                    <li>This helps in quickly identifying the product by looking at its picture.</li>
+                                </ul>
+                            </li>
+                            <li><b>Description</b>
+                                <ul>
+                                    <li>A short note about the item. You can write extra details that don’t fit in other
+                                        fields.
+                                    </li>
+                                    <li>Example: "Blue cover, A5 size, 200 pages" or "Fortune Sunflower Oil, refined,
+                                        1-liter
+                                        bottle".</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- About Units -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>About item units explanation</b>
+                    </label>
+                    <div class="info">
+                        <p>
+                        <ol type="1">
+                            <li>
+                                <b>Bottle (btl)</b>
+                                <ul>
+                                    <li>For liquids or drinks that come in bottles.</li>
+                                    <li>Example: cold drink bottle, oil bottle, sauce bottle.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Box (box)</b>
+                                <ul>
+                                    <li>A larger packaging unit containing many items inside.</li>
+                                    <li>Example: a box of tea bags, a box of chocolates, a carton of soaps.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Bundle (bdl)</b>
+                                <ul>
+                                    <li>A tied pack of multiple items.</li>
+                                    <li>Example: a bundle of currency notes, a bundle of broomsticks, a bundle of
+                                        notebooks.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Dozen (doz)</b>
+                                <ul>
+                                    <li>A set of 12 pieces.</li>
+                                    <li>Example: 1 dozen eggs = 12 eggs, 1 dozen bananas = 12 bananas.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Gram (g)</b>
+                                <ul>
+                                    <li>Smallest weight unit for light items.</li>
+                                    <li>Example: 100 g turmeric powder, 50 g tea leaves.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Jar (jar)</b>
+                                <ul>
+                                    <li>For items sold in jars.</li>
+                                    <li>Example: pickle jar, jam jar, honey jar.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Kilogram (kg)</b>
+                                <ul>
+                                    <li>Standard unit for heavier items.</li>
+                                    <li>Example: 1 kg sugar, 2 kg rice, 5 kg wheat flour.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Liter (L)</b>
+                                <ul>
+                                    <li>Standard unit for large liquid quantities.</li>
+                                    <li>Example: 1 liter milk, 2 liter soft drink, 5 liter water can.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Milligram (mg)</b>
+                                <ul>
+                                    <li>1 mg = 0.001 g.</li>
+                                    <li>Example: 250 mg tablet (for medical/general items)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Milliliter (ml)</b>
+                                <ul>
+                                    <li>For small liquid quantities.</li>
+                                    <li>Example: 200 ml cold drink, 500 ml oil pouch.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Packet (pkt)</b>
+                                <ul>
+                                    <li>Used for items packed in small sealed packs.</li>
+                                    <li>Example: biscuit packet, chips packet, spice packet.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Pair (pr)</b>
+                                <ul>
+                                    <li>For items sold in twos.</li>
+                                    <li>Example: a pair of slippers, a pair of socks.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Pieces (pcs)</b>
+                                <ul>
+                                    <li>Used for single items that are sold one by one.</li>
+                                    <li>Example: 1 soap bar, 1 notebook, 1 packet of chips.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Quintal (qtl)</b>
+                                <ul>
+                                    <li>1 quintal = 100 kg.</li>
+                                    <li>Example: 1 quintal rice sack.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Roll</b>
+                                <ul>
+                                    <li>Used for items that are wound up or packed in a cylindrical shape.</li>
+                                    <li>Example: 1 roll of tissue paper, 1 roll of aluminum foil, 1 roll of butter
+                                        paper.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Sachet</b>
+                                <ul>
+                                    <li>A small sealed packet containing a single_use or small quantity of a product.
+                                    </li>
+                                    <li>Example: 1 sachet of shampoo, 1 sachet of ketchup, 1 sachet of coffee.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Set</b>
+                                <ul>
+                                    <li>A collection of items that are sold together as a single group.</li>
+                                    <li>Example: 1 set of cups and saucers, 1 set of spoons, 1 set of plates.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Tin (tin)</b>
+                                <ul>
+                                    <li>Used for items packed in tins.</li>
+                                    <li>Example: ghee tin, powdered milk tin, paint tin.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Unit</b>
+                                <ul>
+                                    <li>A general term when the item is sold individually without a specific
+                                        measurement.
+                                    </li>
+                                    <li>Example: 1 unit of soap, 1 unit of notebook, 1 unit of detergent bottle.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- about category -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>About items category explanation</b>
+                    </label>
+                    <div class="info">
+                        <p>
+                        <ol type="1">
+                            <li>
+                                <b>Bakery</b>
+                                <ul>
+                                    <li>Freshly baked or packaged bread items and sweets.</li>
+                                    <li>Examples: bread, buns, biscuits, cookies, cakes, pastries.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Beverages</b>
+                                <ul>
+                                    <li>All types of drinks, ready-to-drink or for making at home.</li>
+                                    <li>Examples: soft drinks, bottled water, fruit juices, tea, coffee, energy drinks.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Cleaning Supplies</b>
+                                <ul>
+                                    <li>Products used for cleaning and laundry.</li>
+                                    <li>Examples: detergent, dishwashing liquid, floor cleaner, broom, mop, sponges.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Dairy & Eggs</b>
+                                <ul>
+                                    <li>Milk-based and fresh dairy products, plus eggs.</li>
+                                    <li>Examples: milk, curd (yogurt), butter, ghee, cheese, paneer, eggs.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Frozen Foods</b>
+                                <ul>
+                                    <li>Pre-packed food stored in freezers.</li>
+                                    <li>Examples: frozen peas, French fries, ice cream, frozen nuggets, parathas.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Fruits</b>
+                                <ul>
+                                    <li>Fresh fruits sold by weight or pieces.</li>
+                                    <li>Examples: apples, bananas, mangoes, grapes, oranges.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Grocery & Food Items</b>
+                                <ul>
+                                    <li>Basic food essentials used daily.</li>
+                                    <li>Examples: rice, wheat flour (atta), pulses (dal), sugar, salt, cooking oil,
+                                        spices.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Healthcare</b>
+                                <ul>
+                                    <li>Basic over-the-counter medical and hygiene items.</li>
+                                    <li>Examples: bandages, antiseptics, hand sanitizer, first-aid supplies, masks,
+                                        basic
+                                        medicines (if allowed).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Household Essentials</b>
+                                <ul>
+                                    <li>Everyday non-food items for the home.</li>
+                                    <li>Examples: matchboxes, candles, batteries, utensils, plastic containers, aluminum
+                                        foil.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Miscellaneous</b>
+                                <ul>
+                                    <li>For items that don’t fit into other categories.</li>
+                                    <li>Examples: seasonal products, gifts, unique store-specific goods.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Personal Care</b>
+                                <ul>
+                                    <li>Items for hygiene and grooming.</li>
+                                    <li>Examples: soap, shampoo, conditioner, toothpaste, toothbrush, shaving cream,
+                                        hair
+                                        oil.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Snacks</b>
+                                <ul>
+                                    <li>Ready-to-eat items for quick consumption.</li>
+                                    <li>Examples: chips, wafers, chocolates, namkeen, instant noodles.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Stationery</b>
+                                <ul>
+                                    <li>Paper and office/school-related items.</li>
+                                    <li>Examples: pens, pencils, erasers, notebooks, glue, markers.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Toys & Kids Items</b>
+                                <ul>
+                                    <li>Small toys and products mainly for children.</li>
+                                    <li>Examples: balls, dolls, coloring books, crayons, puzzles.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Vegetables</b>
+                                <ul>
+                                    <li>Fresh vegetables sold by weight.</li>
+                                    <li>Examples: potatoes, onions, tomatoes, spinach, capsicum, cauliflower.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <!--Purchase order details of input field. -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>Purchase order details that you can write on input field.</b>
+                    </label>
+                    <div class="info">
+                        <p>
+                        <ol type="1">
+                            <li>
+                                <b>Purchase Order ID</b>
+                                <ul>
+                                    <li>A unique identifier for each purchase order.</li>
+                                    <li>Helps track and manage orders efficiently.</li>
+                                    <li>Example: "PO001", "PO002".</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <b>Store Owner Contact Number</b>
+                                <ul>
+                                    <li>A shop owner or shop phone number you can write here.
+                                    </li>
+                                    <li>It help supplier to contact you if something goes wrong with delivery.</li>
+                                </ul>
+                            </li>
+                            <li><b>Expected Delivery Date</b>
+                                <ul>
+                                    <li>The date when you expect the ordered items to arrive.</li>
+                                </ul>
+                            </li>
+                            <li><b>Supplier Name</b>
+                                <ul>
+                                    <li>The name of the supplier for the order items.</li> 
+                                    <li>Suppliers name that have any item which a quantity is 5 or less are shown in the selection list automatically.</li>
+                                    <li>Example: if the blue pen supplied by "Rorito PVT LTD" has a quantity of 5 or less then "Rorito PVT LTD" will appear in the list.</li>
+                                </ul>
+                            </li>
+                            <li><b>Item Name</b>
+                                <ul>
+                                    <li>The name of the item being reordered. Items  which has a quantity of 5 or less are listed based on supplier name for selection.</li>
+                                    <li>Example: If you select "Rorito PVT LTD" which has a items with quantity of 5 or less, such as "Blue Pen", "Notebook", or "Cooking Oil 1L", are listed in the selection.</li>
+                                </ul>
+                            </li>
+                            <li><b>Quantity</b>
+                                <ul>
+                                    <li>The number of items you want to reorder.</li>
+                                    <li>Example: if you want to order 3000 Ball pen packet then quantity will be 3000.</li>
+                                </ul>
+                            </li>
+                            <li><b>Delivery Address</b>
+                                <ul>
+                                    <li>Address where you want to receive the items</li>
+                                    <li>Example: "123 Main St/Area, Nearby, City, State, PIN Code".</li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><b>Remarks</b>
+                                <ul>
+                                    <li>A note for the supplier to read.</li>
+                                    <li>Example: The supplied items should arrive before 6:00 pm, as after that my store will be closed for the day.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <!--Billing details of input field. -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>Billing details that you can write on input field.</b>
+                    </label>
+                    <div class="info">
+                        <p>
+                        <ol type="1">
+                            <li>
+                                <b>Customer ID</b>
+                                <ul>
+                                    <li>A unique identifier for each customer.</li>
+                                    <li>Helps track purchases and manage customer accounts.</li>
+                                    <li>Example: "CUST001", "CUST002".</li>
+                                </ul>
+                            </li>
+                            <li><b>Customer Name</b>
+                                <ul>
+                                    <li>A name of the customer who buying.</li>
+                                    <li>Example: "Ram" or "Krishna".</li>
+                                </ul>
+                            </li>
+                            <li><b>Customer Phone Number</b>
+                                <ul>
+                                    <li>A customer contact number for marketing.</li>
+                                </ul>
+                            </li>
+                            <li><b>Sales Date</b>
+                                <ul>
+                                    <li>A date when items is sold.</li>
+                                    <li>This helps track daily sales.</li>
+                                </ul>
+                            </li>
+                            <li><b>Payment Method</b>
+                                <ul>
+                                    <li>A payment mode: cash or online, which tells us how customer was pay for items.</li>
+                                </ul>
+                            </li>
+                            <li><b>Item Name</b>
+                                <ul>
+                                    <li>Name of item that customer is buying. A items with quantity is 5 or less will not be shows in a list.</li>
+                                    <li>Example: "Fortune Oil 1L" or "Red Notebook" and Blue pen with quantity 3 is not showing in the list.</li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><b>Quantity</b>
+                                <ul>
+                                    <li>A number of item that customer is buying.</li>
+                                    <li>Example: If customer buying a 6 notebook then quantity will be 6.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><b>Price</b>
+                                <ul>
+                                    <li>A price of item is selling price that you entered at the time of adding items in the inventory.</li>
+                                    <li>It gets automatically entered by the system when you select an item.</li>
+                                    <li>Example: if Blue pen selling price is 7 then price will be 7.</li>
+                                </ul>
+                            </li>
+                            <li><b>Discount Mode</b>
+                                <ul>
+                                    <li>A discount mode: cash or percentage %, which tells how much you offer discount and price get adjusted automatically.</li>
+                                </ul>
+                            </li>
+                            <li><b>Amount</b>
+                                <ul>
+                                    <li>A total amount of per item that customer is buying.</li>
+                                    <li>It gets automatically calculated by the system when you select an item and enter quantity and discount mode.</li>
+                                    <li>Example: If customer buying a 6 notebook then amount will be 42 after discount.</li>
+                                </ul>
+                            </li>
+                            <li><b>Total Amount</b>
+                                <ul>
+                                    <li>A total amount of all items that customer is buying</li>
+                                    </li>
+                                    <li>Example: If customer buying a 6 notebook with selling price 70 and 3 pen with selling price 7 then total amount will be 441 after no discount.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- How do I add a new item? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I add a new item?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                <b>1 - </b>
+                                Click on <b>"Add"</b> icon <img src="../svg/add_item.svg" width="24px" height="24px"> at
+                                left side bar.
+                            </p>
+                            <img src="../photos/image1.jpg" class="aiImg">
+                            <p>
+                                <b>2 - </b>
+                                Type all details of your item and upload image (if any) then click on <b>"Save"</b>
+                                button
+                                at bottom right corner after you
+                                done.
+                            </p>
+                            <img src="../photos/image2.jpg" class="aiImg">
+                            <p>
+                                <b>3 - </b>
+                                Then click on <b>"Yes"</b> button to submit and save details.
+                            </p>
+                            <img src="../photos/image3.jpg" class="aiImg">
+                            <p>
+                                <b>4 - </b>
+                                Or Reset all details by click on <b>"Reset"</b> button at bottom right corner.
+                            </p>
+                            <img src="../photos/image4.jpg" class="aiImg">
+                            <p>
+                                <b>5 - </b>
+                                Then click on <b>"Yes"</b> button to reset details.
+                            </p>
+                            <img src="../photos/image5.jpg" class="aiImg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How do I see my all added item? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I see my all added item?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                Click on <b>"Items"</b> icon <img src="../svg/item_card.svg" width="24px" height="24px">
+                                at
+                                left side
+                                bar.
+                            </p>
+                            <img src="../photos/image6.jpg" class="aiImg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How do I view a specific item's details? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I view a specific item's details?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                <b>1 - </b>
+                                Click on <b>"Items"</b> icon <img src="../svg/item_card.svg" width="24px" height="24px">
+                                at
+                                left side
+                                bar.
+                            </p>
+                            <img src="../photos/image6.jpg" class="aiImg">
+                            <p>
+                                <b>2 - </b>
+                                Take your mouse pointer on item that you want to view all details then click on <img
+                                    src="../svg/view_item_light.svg"> view icon.
+                            </p>
+                            <img src="../photos/image7.jpg" class="aiImg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How do I edit a specific item? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I edit a specific item?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                <b>1 - </b>
+                                Click on <b>"Items"</b> icon <img src="../svg/item_card.svg" width="24px" height="24px">
+                                at
+                                left side
+                                bar.
+                            </p>
+                            <img src="../photos/image6.jpg" class="aiImg">
+                            <p>
+                                <b>2 - </b>
+                                Take your mouse pointer on item that you want to edit details then click on <img
+                                    src="../svg/edit_item_light.svg"> edit icon.
+                            </p>
+                            <img src="../photos/image8.jpg" class="aiImg">
+                            <p>
+                                <b>3 - </b>
+                                Now edit your item details as you want or reupload image (if any) and click on
+                                <b>"Update"</b> button at bottom right corner after you done.
+                                <br>(<b>Note - <i>you cannot change or edit item SKU because SKU is unique for every
+                                        item.
+                                        If you do and submit it, then your changes in item details won't be
+                                        saved.</i>)</b>
+                            </p>
+                            <img src="../photos/image10.jpg" class="aiImg">
+                            <p>
+                                <b>4 - </b>
+                                Then click on <b>"Yes"</b> button to submit and save changes.
+                            </p>
+                            <img src="../photos/image11.jpg" class="aiImg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How do I remove/delete a specific item? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I remove/delete a specific item?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                <b>
+                                    *** There is two way to delete an item ***<br><br>
+                                    Way 1 -
+                                </b>
+                                <br><br>
+                                <b>1 - </b>
+                                Click on <b>"Items"</b> icon <img src="../svg/item_card.svg" width="24px" height="24px">
+                                at
+                                left side
+                                bar.
+                            </p>
+                            <img src="../photos/image6.jpg" class="aiImg">
+                            <p>
+                                <b>2 - </b>
+                                Take your mouse pointer on item that you want to delete all details then click on <img
+                                    src="../svg/remove_item_light.svg"> remove icon.
+                            </p>
+                            <img src="../photos/image9.jpg" class="aiImg">
+                            <p>
+                                <br><br><b>Way 2 -</b><br><br>
+                                <b>3 - </b>
+                                Or you can also delete item when you editing the item details, Take your mouse pointer on item that you want to edit details then click on <img
+                                    src="../svg/edit_item_light.svg"> edit icon.
+                            </p>
+                            <img src="../photos/image8.jpg" class="aiImg">
+                            <p>
+                                <b>4 - </b> 
+                                Just click on <b>"Delete"</b> button at bottom right corner.</p>
+                            <img src="../photos/image12.jpg" class="aiImg">
+                            <p>
+                                <b>5 - </b>
+                                Then click on <b>"Yes"</b> button to delete item permanently.
+                            </p>
+                            <img src="../photos/image13.jpg" class="aiImg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How do I place a purchase order for item refills? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I place a purchase order for item refills?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                <b>1 - </b>
+                                Click on <b>"Purchase"</b> icon <img src="../svg/purchase_icon.svg" width="24px" height="24px">
+                                at
+                                left side
+                                bar.
+                            </p>
+                            <img src="../photos/image14.jpg" class="aiImg">
+                            <p>
+                                <b>2 - </b>
+                                Fills all details of purchase order and if you want to order more than one item then click on
+                                <img src="../svg/plus_icon.svg" width="24px" height="24px"> plus icon bar to add more rows.
+                            </p>
+                            <img src="../photos/image15.jpg" class="aiImg">
+                            <p>
+                                <b>3 - </b>
+                                If you want to remove any row then click on <img src="../svg/minus_square_icon.svg" width="24px" height="24px"> minus icon to remove that row.
+                            </p>
+                            <img src="../photos/image16.jpg" class="aiImg">
+                            <p>
+                                <b>4 - </b>
+                                After you done to write all items order details for purchase order request then click on <b>"Order Now"</b> button at bottom right corner.
+                            </p>
+                            <img src="../photos/image17.jpg" class="aiImg">
+                            <p>
+                                <b>5 - </b>
+                                Then click on <b>"Yes"</b> button to place purchase order.
+                            </p>
+                            <img src="../photos/image18.jpg" class="aiImg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How do I create bill and save it as pdf? -->
+                <div class="block">
+                    <label class="li">
+                        <input type="checkbox">
+                        <b>How do I create bill and save it as pdf?</b>
+                    </label>
+                    <div class="info">
+                        <div class="HowTo">
+                            <p>
+                                <b>1 - </b>
+                                Click on <b>"billing"</b> icon <img src="../svg/billing_icon.svg" width="24px" height="24px">
+                                at
+                                left side
+                                bar.
+                            </p>
+                            <img src="../photos/image19.jpg" class="aiImg">
+                            <p>
+                                <b>2 - </b>
+                                Fills all details of selling item and if you are selling more than one item then click on
+                                <img src="../svg/plus_icon.svg" width="24px" height="24px"> plus icon bar to add more rows.
+                            </p>
+                            <img src="../photos/image20.jpg" class="aiImg">
+                            <p>
+                                <b>3 - </b>
+                                If you want to remove any row then click on <img src="../svg/minus_square_icon.svg" width="24px" height="24px"> minus icon to remove that row.
+                            </p>
+                            <img src="../photos/image21.jpg" class="aiImg">
+                            <p>
+                                <b>4 - </b>
+                                After you done to write all items details for bill or selling then click on <b>"Sold"</b> button at bottom right corner.
+                            </p>
+                            <img src="../photos/image22.jpg" class="aiImg">
+                            <p>
+                                <b>5 - </b>
+                                Then click on <b>"Yes"</b> button to creating bill.
+                            </p>
+                            <img src="../photos/image23.jpg" class="aiImg">
+                            <p>
+                                <b>6 - </b>
+                                Write bill name or keep default name and specific folder where you went to save it then click on <b>"save"</b> button.
+                            </p>
+                            <img src="../photos/image24.jpg" class="aiImg">
+                            <br><p>
+                                <b>*** You can see sample of bill ***</b>
+                            </p><br>
+                            <img src="../photos/image25.png" class="aiImg">
+                            <br><p>
+                                You can also see <b>"Today Sales"</b> just beside billing title.<br>
+                                <b>Here comparison:</b>
+                            </p><br>
+                            <div class="comparisonImg">
+                                <div class="beforeImg">
+                                    <p><b>Before selling:</b></p>
+                                    <img src="../photos/image26.jpg" class="aiImg">
+                                </div>
+                                <div class="afterImg">
+                                    <p><b>After selling:</b></p>
+                                    <img src="../photos/image27.jpg" class="aiImg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <a href="..\html\index.html">
+                <button type="button" class="button">
+                    Back
+                </button>
+            </a>
+        </footer>
+
+    </div>
+
+    <script src="../javascript/helpPage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+:root {
+    --border-color-1: rgb(0, 0, 255);
+    --text-color-1: #000000;
+    --bg-color-7: rgb(255, 255, 255);
+    --border-color-2: none;
+    --bg-color-6: rgba(0, 0, 255, 0.250);
+    --stroke-color-2: #0000ff;
+    --fill-color-1: #0000ff;
+    --upload-photo-stroke: rgb(128, 128, 128);
+    --default-photo-fill: #000000;
+}
+
+body.dark-mode {
+    --border-color-1: rgb(0, 255, 255);
+    --text-color-1: #00ffff;
+    --bg-color-7: rgb(0, 0, 0);
+    --border-color-2: rgb(0, 255, 255);
+    --bg-color-6: rgb(0, 0, 0);
+    --stroke-color-2: #00ffff;
+    --fill-color-1: #00ffff;
+    --upload-photo-stroke: rgb(0, 255, 255);
+    --default-photo-fill: #00ffff;
+}
+
+.setting-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 89vw;
+    min-height: 32px;
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.help {
+    font-weight: bold;
+    color: var(--text-color-1);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.help:hover {
+    background-color: var(--bg-color-6);
+    border: var(--border-color-2) 2px solid;
+    width: 89vw;
+}
+
+.theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89vw;
+}
+
+.themeImg {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.outlineToggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--border-color-1);
+    border-radius: 24px;
+    width: 40.2px;
+    height: 20.16px;
+}
+
+.circle {
+    position: absolute;
+    right: 53%;
+    background-color: var(--bg-color-7);
+    border-radius: 22px;
+    border: var(--border-color-1) 3px solid;
+    width: 12px;
+    height: 12px;
+    transition: all ease-in-out 0.3s;
+}
+
+.tcIcon {
+    stroke: var(--stroke-color-2);
+}
+
+.hc1 {
+    stroke: var(--stroke-color-2);
+}
+
+.hc2 {
+    fill: var(--fill-color-1);
+}
+
+.upIcon {
+    stroke: var(--upload-photo-stroke);
+}
+
+.dpIcon {
+    fill: var(--default-photo-fill);
+}
