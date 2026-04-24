@@ -93,7 +93,7 @@ A web-based **Inventory Management System** designed for small and medium-sized 
 5. Run the server on Visual Studio Code terminal:
 
    ```
-   cd server; node server.js
+   node server.js
    ```
 
 6. Open in Visual Studio Code:
