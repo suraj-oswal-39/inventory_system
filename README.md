@@ -76,7 +76,7 @@ A web-based **Inventory Management System** designed for small and medium-sized 
 2. Clone the repository:
 
    ```
-   git clone https://github.com/suraj-oswal-39/
+   git clone https://github.com/suraj-oswal-39/inventory_system.git
    ```
 
 3. Install dependencies:
@@ -101,7 +101,7 @@ A web-based **Inventory Management System** designed for small and medium-sized 
    ```
    Click on "Go Live" at the bottom bar in Visual Studio Code 
    ```
-
+Note: for proper setup, read the 'about setup.txt' file
 ---
 
 ## 🧾 Database Tables
@@ -170,11 +170,3 @@ Modification allowed with proper credit.
 * MDN Web Docs
 * YouTube tutorials
 * ChatGPT (for guidance and debugging)
-
----
-
-If you want, I can also:
-
-* Add **screenshots section**
-* Add **API documentation**
-* Or make a **professional GitHub repo structure (best practices)**
