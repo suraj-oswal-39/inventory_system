@@ -65,45 +65,42 @@ A web-based **Inventory Management System** designed for small and medium-sized 
 * mysql2
 * pdfkit
 
----
+## ▶️ Setup Instructions
 
-## ⚙️ Installation & Setup
+1. Install required tools:
 
-### 1. Clone the Repository
+   * Node.js
+   * MySQL
+   * Visual Studio Code with the live server extension
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-```
+2. Clone the repository:
 
-### 2. Install Dependencies
+   ```
+   git clone https://github.com/suraj-oswal-39/
+   ```
 
-```bash
-npm install
-```
+3. Install dependencies:
 
-### 3. Setup Database
+   ```
+   npm install
+   ```
 
-* Open MySQL Workbench
-* Create a database:
+4. Configure database:
 
-```sql
-CREATE DATABASE inventory_db;
-```
+   * Create MySQL database and tables based on 'require-tables.txt'
+   * Update connection details in backend (/server/server.js)
 
-* Import your tables (items, sales, sold_items, etc.)
+5. Run the server on Visual Studio Code terminal:
 
-### 4. Run Server
+   ```
+   cd server; node server.js
+   ```
 
-```bash
-node server.js
-```
+6. Open in Visual Studio Code:
 
-Server will run on:
-
-```
-http://localhost:3000
-```
+   ```
+   Click on "Go Live" at the bottom bar in Visual Studio Code 
+   ```
 
 ---
 
