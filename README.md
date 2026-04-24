@@ -160,7 +160,7 @@ Note: for proper setup, read the 'about setup.txt' file
 
 ## 📜 License
 
-This project is for **educational purposes only**.
+This project is licensed under the MIT License.
 Modification allowed with proper credit.
 
 ---
